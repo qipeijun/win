@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>神州云海年会盛典-2019-不负过去，勇创未来</title>
+  <link href="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/css/index.css">
+  <script src="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+  <div class="bg"></div>
+
+  <div class="remove-data" @click="clearDatas" title="清除数据"></div>
+
+  <div class="img-wrap">
+
+    <div data-aos="zoom-in" class="img-item" v-for="(n,i) in imgs" :key="i" @click="showImg(n,i)">
+      <div>
+        <img :src="`./img/${n}.jpg`" alt="">
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <transition name="fade">
+
+    <div class="pop-bg" v-if="show"></div>
+
+  </transition>
+
+  <transition name="bounce">
+    <div class="pop" v-if="show" @click.stop="show = false">
+
+      <div class="img-pop" v-show="show" @click.stop="hideImg">
+        <div class="close" @click="hideImg"></div>
+        <img :src="`./img/${curImg}.jpg`" alt="">
+      </div>
+    </div>
+  </transition>
+
+
+
+</div>
+</body>
+</html>
+
+<script src="./js/index.js"></script>
