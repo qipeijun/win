@@ -39,8 +39,8 @@
   <transition name="bounce">
     <div class="pop" v-if="show" @click.stop="show = false">
 
-      <div class="img-pop" v-show="show" @click.stop="hideImg">
-        <div class="close" @click="hideImg"></div>
+      <div class="img-pop" v-show="show" >
+        <div class="close" @click.stop="hideImg"></div>
         <img :src="`./img/${curImg}.jpg`" alt="">
       </div>
     </div>
