@@ -46,7 +46,7 @@
     cursor: zoom-in;
     > div {
       transition: all 0.5s ease;
-      background: #fff;
+      background: url("../../img/red-bg.png") repeat;
       width: 300px;
       height: 300px;
       display: flex;
@@ -54,7 +54,7 @@
       align-items: center;
       border-radius: 10px;
       &:hover{
-        box-shadow: 0 10px 30px #fefefe;
+        box-shadow: 0 10px 30px #fe6740;
         transform: translateY(-15px);
       }
     }
@@ -102,7 +102,8 @@
     width: 700px;
     height: 700px;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: url("../../img/red-bg.png") repeat;
+
     border-radius: 10px;
     display: flex;
     justify-content: center;
