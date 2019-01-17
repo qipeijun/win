@@ -35,6 +35,23 @@ let app = new Vue({
           src:'./img/win/小熊蒸锅.jpg',
           srcW:""
         },
+
+        {
+          src:'./img/win/m一等奖.png',
+          srcW:"./img/win/一等奖.jpg"
+        },
+        {
+          src:'./img/win/m二等奖.png',
+          srcW:"./img/win/二等奖.jpg"
+        },
+        {
+          src:'./img/win/m三等奖.png',
+          srcW:"./img/win/三等奖.jpg"
+        },
+        {
+          src:'./img/win/m幸运奖.png',
+          srcW:"./img/win/幸运奖.jpg"
+        },
         {
           src:'./img/win/小米灯.jpg',
           srcW:""
@@ -61,29 +78,9 @@ let app = new Vue({
           srcW:""
         },
         {
-          src:'./img/win/m幸运奖.png',
-          srcW:"./img/win/幸运奖.jpg"
-        },
-        {
           src:'./img/win/面包机.jpg',
           srcW:""
         },
-        {
-          src:'./img/win/m二等奖.png',
-          srcW:"./img/win/二等奖.jpg"
-        },
-        {
-          src:'./img/win/m一等奖.png',
-          srcW:"./img/win/一等奖.jpg"
-        },
-        {
-          src:'./img/win/m三等奖.png',
-          srcW:"./img/win/三等奖.jpg"
-        },
-
-
-
-
 
 
       ],
