@@ -90,6 +90,7 @@ let app = new Vue({
   methods:{
     clearDatas(){
       localStorage.removeItem('datas')
+      window.location.reload();
     },
     showImg(i,e){
       let node = e.currentTarget;
@@ -100,7 +101,7 @@ let app = new Vue({
       }else {
         src = $(node).find('img').attr('src')
       }
-      if (src == './img/click.jpg') {
+      if ($(node).find('img').attr('src') === './img/click.jpg') {
           return;
       }
       this.show = true;
