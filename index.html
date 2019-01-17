@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style/css/index.css">
   <script src="https://cdn.bootcss.com/aos/3.0.0-beta.6/aos.js"></script>
   <!--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
 
 </head>
@@ -16,13 +17,13 @@
 
   <div class="bg"></div>
 
-  <div class="remove-data" @click="clearDatas" title="清除数据"></div>
+  <div class="remove-data" @click="clearDatas" title="清除记录"></div>
 
   <div class="img-wrap">
 
-    <div data-aos="zoom-in" class="img-item" v-for="(n,i) in imgs" :key="i" @click="showImg(n,i)">
+    <div data-aos="zoom-in" class="img-item" v-for="(n,i) in imgs" :key="i" @click="showImg(i,$event)">
       <div>
-        <img :src="`./img/${n}.jpg`" alt="">
+        <img :src="n.src" :data-win="n.srcW" alt="">
       </div>
     </div>
 
@@ -41,7 +42,7 @@
 
       <div class="img-pop" v-show="show" >
         <div class="close" @click.stop="hideImg"></div>
-        <img :src="`./img/${curImg}.jpg`" alt="">
+        <img :src="curImg" alt="">
       </div>
     </div>
   </transition>

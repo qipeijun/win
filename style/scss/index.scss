@@ -10,7 +10,7 @@
     content: '';
     width: 0;
     height: 0;
-    background: url("../../img/1000.jpg");
+    background: url("../../img/click.jpg");
     position: absolute;
     display: block;
   }
@@ -134,10 +134,10 @@
 
 
 .bounce-enter-active {
-  animation: zoomIn 0.45s ease;
+  animation: zoomIn 0.35s ease;
 }
 .bounce-leave-active {
-  animation: zoomOut 0.75s ease;
+  animation: zoomOut 0.65s ease;
 }
 
 @keyframes zoomIn {
