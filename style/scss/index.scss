@@ -40,23 +40,23 @@
 
 .img-wrap{
   margin: 0 auto;
-  width: 1800px;
+  width: 1700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   .img-item{
-    margin: 20px;
+    margin: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
     cursor: zoom-in;
     > div {
       transition: all 0.5s ease;
       background: url("../../img/red-bg.png") repeat;
-      width: 260px;
-      height: 260px;
+      width: 220px;
+      height: 220px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -69,8 +69,8 @@
 
     img{
       display: block;
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
   }
 }
